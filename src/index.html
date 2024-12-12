@@ -1,14 +1,89 @@
-<link href="/src/css/styles.css" rel="stylesheet">
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <title>Clothing Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
+<body class="bg-gray-100 text-gray-200 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-4xl font-thin text-red-600">Red Elegancy</h1>
+    </div>
+  </header>
+
+  <section class="bg-cover bg-center h-[400px]">
+        
+      <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-red-600">Clothing Store</h1>
+        <nav class="space-x-6">
+          <a href="#" class="text-gray-700 hover:text-red-600">Home</a>
+          <a href="#" class="text-gray-700 hover:text-red-600">Shop</a>
+          <a href="#" class="text-gray-700 hover:text-red-600">About Us</a>
+          <a href="#" class="text-gray-700 hover:text-red-600">Contact</a>
+        </nav>
+    </div>
+  </header>
+    
+      <!-- Hero Section -->
+      <section class="bg-cover bg-center h-[400px]">
+        <div class="bg-[url('https://files.123freevectors.com/wp-content/original/157635-abstract-red-and-white-background.jpg')] h-full bg-cover flex flex-col justify-center items-center">
+          <h2 class="text-4xl text-white font-bold">Elegance. Style. Comfort.</h2>
+          <p class="text-lg text-gray-200 mt-4">Find the perfect outfit for every celebration.</p>
+          <a href="#shop" class="mt-6 px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded hover:bg-red-700">Shop Now</a>
+        </div>
+      </section>
+    
+      <!-- Featured Products -->
+      <section id="shop" class="py-12">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">New Products</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product Card -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img src="https://i.pinimg.com/originals/e5/4a/4d/e54a4d0064bc47267cbc1056d0fa5aec.jpg" alt="Product 1" class="w-full h-60 object-contain">
+              <div class="p-4">
+                <h3 class="font-bold text-xl text-gray-600">Kids</h3>
+                <p class="text-gray-600">49.99€</p>
+                <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700">Add to Cart</button>
+              </div>
+            </div>
+            <!-- Product Card -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img src="https://th.bing.com/th/id/OIP.1gPag_EJ1ZJA_O_0aMVcSwHaJ4?w=768&h=1024&rs=1&pid=ImgDetMain" alt="Product 2" class="w-full h-60 object-contain">
+              <div class="p-4">
+                <h3 class="font-bold text-xl text-gray-600">Women</h3>
+                <p class="text-gray-600">59.99€</p>
+                <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700">Add to Cart</button>
+              </div>
+            </div>
+            <!-- Product Card -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img src="https://i8.amplience.net/i/indochino/15011366_0_0/blue-checked-design-stafford-suit.jpg?$suit-pdp-desk$" alt="Product 3" class="w-full h-60 object-contain">
+              <div class="p-4">
+                <h3 class="font-bold text-xl text-gray-600">Men</h3>
+                <p class="text-gray-600">89.99€</p>
+                <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Footer -->
+      <footer class="bg-gray-800 text-gray-200 py-6">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 ClothingStore. All rights reserved.</p>
+          <p>Follow us on 
+            <a href="#" class="text-red-600 hover:underline">Instagram</a>, 
+            <a href="#" class="text-red-600 hover:underline">Facebook</a>, 
+            <a href="#" class="text-red-600 hover:underline">Twitter</a>.
+          </p>
+        </div>
+      </footer>
+    
